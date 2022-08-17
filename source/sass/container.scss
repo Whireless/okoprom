@@ -1,0 +1,14 @@
+.container {
+  width: 288px;
+  padding: 0 16px;
+
+  @media (min-width: $tabletW) {
+    width: 624px;
+    padding: 0 72px;
+  }
+
+  @media (min-width: $pre-desktopW) {
+    width: 944px;
+    padding: 0 40px;
+  }
+}
