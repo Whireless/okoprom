@@ -1,14 +1,21 @@
-// widths
+// Брейкпоинты
 $tabletW: 768px;
 $pre-desktopW: 1024px;
 $desktopW: 1280px;
 
-// colors
+// Цвета
 $black: #202226;
 $blackText: #161616;
+$blackLine: #36383c;
 $white: #ffffff;
 $grey: #f4f5f8;
+$grey2: #e9e9e9;
 $greyText: #757575;
+$greyText2: #9f9f9f;
 $green: #308d77;
 $blue: #2949b5;
 $red: #d21924;
+
+// Для микро-анимаций
+$basicTime: 0.4s;
+$basicOpacity: 0.7;

@@ -1,6 +1,7 @@
 .container {
   width: 288px;
   padding: 0 16px;
+  margin: 0 auto;
 
   @media (min-width: $tabletW) {
     width: 624px;

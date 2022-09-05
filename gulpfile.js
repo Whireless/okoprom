@@ -59,39 +59,17 @@ const optimizeImages = () => {
 }
 exports.optimizeImages = optimizeImages;
 
-const getSprite = () => {
-  return gulp.src('source/img/svg/*.svg')
-    .pipe(svgSprite({
-      mode: {
-        symbol: {
-          sprite: '../sprite.svg',
-        }
-      },
-      shape: {
-        transform: [
-          {
-            svgo: {
-              plugins: [
-                {
-                  removeAttrs: {
-                    attrs: ['class', 'data-name'],
-                  },
-                },
-              ],
-            },
-          },
-        ],
-      },
-    }))
+const copyImages = () => {
+  return gulp.src('source/img/**/*.{png,svg,jpeg}')
     .pipe(gulp.dest('build/img'))
-};
-exports.getSprite = getSprite;
+}
+exports.copyImages = copyImages;
 
 // Copy
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.{woff2,woff}',
+    'source/fonts/*.ttf',
     'source/*.ico',
   ], {
     base: 'source'
@@ -144,7 +122,6 @@ const build = gulp.series(
   clean,
   copy,
   optimizeImages,
-  getSprite,
   gulp.parallel(
     styles,
     html,
@@ -158,8 +135,7 @@ exports.build = build;
 exports.default = gulp.series(
   clean,
   copy,
-  optimizeImages,
-  getSprite,
+  copyImages,
   gulp.parallel(
     styles,
     html,

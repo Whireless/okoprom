@@ -1,0 +1,31 @@
+@import "variables.scss";
+@import "global.scss";
+@import "container.scss";
+@import "blocks/main-header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/main-footer.scss";
+
+// Главная
+@import "blocks/slider.scss";
+@import "blocks/category.scss";
+@import "blocks/advantages.scss";
+@import "blocks/partners.scss";
+@import "blocks/feedback.scss";
+
+// Каталог
+@import "blocks/catalog-advantage.scss";
+@import "blocks/products.scss";
+
+// О компании
+@import "blocks/about.scss";
+@import "blocks/interest.scss";
+
+// Контакты
+@import "blocks/contact-info.scss";
+@import "blocks/legal-info.scss";
+
+// Доставка и оплата
+@import "blocks/receiving.scss";
+
+// Гарантия
+@import "blocks/warranty.scss";

@@ -1,0 +1,58 @@
+.feedback {
+  background-color: $black;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+.feedback__title {
+  color: $white;
+  margin: 0 0 12px 0;
+}
+
+.feedback__description {
+  color: $greyText;
+}
+
+.feedback__input-zone {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 32px 0 0 0;
+  padding: 0;
+  border: none;
+
+  input {
+    background-color: transparent;
+    padding: 15px 0;
+    border: none;
+    border-bottom: 2px solid $white;
+
+    &::placeholder {
+      font-size: 14px;
+      line-height: 16px;
+      color: $greyText2;
+    }
+  }
+}
+
+.feedback__submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $white;
+  width: 114px;
+  height: 44px;
+  margin-top: 32px;
+  padding: 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+}

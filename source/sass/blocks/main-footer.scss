@@ -1,0 +1,158 @@
+.main-footer {
+  background-color: $grey;
+  padding: 16px 0;
+}
+
+.main-footer__logo {
+  display: block;
+  background-image: url("../img/icons/logo.svg");
+  width: 119px;
+  height: 28px;
+}
+
+.main-footer__intro {
+  margin-top: 16px;
+  padding-top: 52px;
+  border-top: 1px solid $grey2;
+}
+
+.main-footer__contacts {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.main-footer__address {
+  display: inline-block;
+  width: 280px;
+  margin-bottom: 32px;
+}
+
+.main-footer__contact-link {
+  text-decoration: none;
+  color: $black;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+
+  &--phone {
+    display: inline-block;
+    margin-bottom: 13px;
+  }
+}
+
+.main-footer__messengers {
+  display: flex;
+  column-gap: 8px;
+  margin: 32px 0;
+}
+
+.main-footer__messenger-link {
+  color: $white;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 109px;
+  height: 44px;
+  background-color: $black;
+  border-radius: 8px;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+}
+
+.main-footer__socials {
+  display: flex;
+}
+
+.main-footer__social-link {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-repeat: no-repeat;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+
+  &--instagram {
+    background-image: url("../img/icons/instagram.svg");
+  }
+
+  &--youtube {
+    background-image: url("../img/icons/youtube.svg");
+    margin-left: 8px;
+    margin-right: 16px;
+  }
+}
+
+.main-footer__subscribe {
+  color: $greyText;
+  width: 168px;
+  margin-top: 6px;
+}
+
+.main-footer__pages {
+  display: flex;
+  flex-direction: column;
+  row-gap: 52px;
+  margin-top: 52px;
+}
+
+.main-footer__pages-info {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.main-footer__pages-title {
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.main-footer__pages-link {
+  color: $black;
+  text-decoration: none;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+}
+
+.main-footer__copyrights {
+  color: $greyText;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 52px;
+  padding-top: 16px;
+  border-top: 1px solid $grey2;
+}
+
+.main-footer__confidentiality {
+  color: $greyText;
+  text-decoration: none;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+}

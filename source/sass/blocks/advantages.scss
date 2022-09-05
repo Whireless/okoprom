@@ -1,0 +1,80 @@
+.advantages {
+  margin-top: 60px;
+}
+
+.advantages__intro {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.advantages__advantage-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+  margin: 32px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__advantage-item {
+  position: relative;
+  width: 232px;
+  margin-left: 57px;
+
+  &::before {
+    content: "";
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    left: -57px;
+    background-repeat: no-repeat;
+  }
+
+  &--feedback {
+    &::before {
+      background-image: url("../img/icons/feedback.svg");
+    }
+  }
+
+  &--experience {
+    &::before {
+      background-image: url("../img/icons/experience.svg");
+    }
+  }
+
+  &--spare {
+    &::before {
+      background-image: url("../img/icons/spare.svg");
+    }
+  }
+
+  &--delivery {
+    &::before {
+      background-image: url("../img/icons/delivery.svg");
+    }
+  }
+
+  &--rent {
+    &::before {
+      background-image: url("../img/icons/rent.svg");
+    }
+  }
+
+  &--guarantee {
+    &::before {
+      background-image: url("../img/icons/guarantee.svg");
+    }
+  }
+}
+
+
+.advantages__title {
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 8px 0;
+}
+
+.advantages__description {
+  color: $greyText;
+}

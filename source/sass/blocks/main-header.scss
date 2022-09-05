@@ -1,0 +1,42 @@
+.main-header__intro-block {
+  background-color: $grey;
+}
+
+.main-header__contact-block {
+  display: flex;
+  justify-content: space-between;
+  height: 44px;
+  padding: 12px 0 16px 0;
+}
+
+.main-header__logo {
+  display: block;
+  background-image: url("../img/icons/logo.svg");
+  width: 119px;
+  height: 28px;
+}
+
+.main-header__contacts {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    text-decoration: none;
+    color: $greyText;
+    transition: $basicTime;
+
+    &:hover,
+    &:focus {
+      opacity: $basicOpacity;
+      transition: $basicTime;
+    }
+  }
+}
+
+.main-header__phone {
+  margin-top: 8px;
+}
+
+.main-header__info {
+  display: none;
+}

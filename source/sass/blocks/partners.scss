@@ -1,0 +1,86 @@
+.partners {
+  margin: 60px 0;
+}
+
+.partners__info-block {
+  background-color: $grey;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.partners__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.partners__description {
+  color: $greyText;
+  margin: 12px 0 0 0;
+}
+
+.partners__partner-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 9px;
+  row-gap: 8px;
+  margin: 8px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.partners__partner-item {
+  width: 90px;
+  height: 82px;
+  background-color: $grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 12px;
+
+  &--iif {
+    background-image: url("../img/mobile/iif.png");
+    background-size: 54px 54px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/iif@2x.png");
+    }
+  }
+
+  &--moskabelmet {
+    background-image: url("../img/mobile/moskabelmet.png");
+    background-size: 57px 54px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/moskabelmet@2x.png");
+    }
+  }
+
+  &--olimpic {
+    background-image: url("../img/mobile/olimpic.png");
+    background-size: 71px 74px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/olimpic@2x.png");
+    }
+  }
+
+  &--techmix {
+    background-image: url("../img/techmix.svg");
+    background-size: 45px 54px;
+  }
+
+  &--UMZ {
+    background-image: url("../img/UMZ.svg");
+    background-size: 70px 45px;
+  }
+
+  &--metal {
+    background-image: url("../img/mobile/metal.png");
+    background-size: 68px 27px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/mobile/metal@2x.png");
+
+    }
+  }
+}

@@ -1,0 +1,100 @@
+.slider {
+  background-color: $black;
+  padding: 12px;
+  border-radius: 12px;
+}
+
+.slider__device-photo {
+  display: block;
+  background-color: $white;
+  border-radius: 8px;
+  margin: 0 auto;
+}
+
+.slider__info {
+  color: $greyText;
+  margin-top: 12px;
+}
+
+.slider__title {
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: $white;
+  margin: 0;
+}
+
+.slider__options {
+  font-size: 12px;
+  margin-top: 12px;
+}
+
+.slider__option {
+  display: flex;
+  margin: 0;
+  padding: 12px 0;
+  border-bottom: 1px solid $blackLine;
+
+  span {
+    margin-left: auto;
+  }
+}
+
+.slider__price {
+  font-size: 18px;
+  line-height: 24px;
+  color: $white;
+  margin-top: 40px;
+  margin-bottom: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid $blackLine;
+}
+
+.slider__other-block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.slider__more {
+  color: $blackText;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 118px;
+  height: 44px;
+  background-color: $white;
+  border-radius: 8px;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+}
+
+.slider__button {
+  background-color: $white;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border: 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: $basicTime;
+
+  &--prev {
+    background-image: url("../img/icons/arr-prev.svg");
+  }
+
+  &--next {
+    background-image: url("../img/icons/arr-next.svg");
+  }
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
+}

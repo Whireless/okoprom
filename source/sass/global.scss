@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Golos";
+  src: url("../fonts/Golos-regular.ttf") format("ttf");
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos";
+  src: url("../fonts/Golos-medium.ttf") format("ttf");
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Golos";
+  src: url("../fonts/Golos-bold.ttf") format("ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+body {
+  font-family: "Golos", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+}

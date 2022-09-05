@@ -1,0 +1,134 @@
+.category {
+  margin-top: 60px;
+}
+
+.category__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 12px 0;
+}
+
+.category__description {
+  color: $greyText;
+  text-align: left;
+  display: block;
+  width: 230px;
+}
+
+.category__product-list {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 32px 0 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.category__product-item {
+  position: relative;
+  width: 264px;
+  height: 246px;
+  background-color: $grey;
+  border-radius: 12px;
+  padding: 12px;
+
+  img {
+    background-color: transparent;
+  }
+}
+
+.category__product-link {
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  text-decoration: none;
+  display: inline-block;
+  // position: relative;
+  width: 176px;
+  transition: $basicTime;
+
+  &::before {
+    content: "";
+    position: absolute;
+    // top: 58px;
+    bottom: 12px;
+    width: 264px;
+    height: 186px;
+    background-color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: $basicTime;
+    border-radius: 20px;
+  }
+
+  &--cables {
+    &::before {
+      background-image: url("../img/mobile/bench.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mobile/bench@2x.png");
+      }
+    }
+  }
+
+  &--separators {
+    &::before {
+      background-image: url("../img/mobile/separators.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mobile/separators@2x.png");
+      }
+    }
+  }
+
+  &--heaters {
+    &::before {
+      background-image: url("../img/mobile/exchangers.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mobile/exchangers@2x.png");
+      }
+    }
+  }
+
+  &--radiators {
+    &::before {
+      background-image: url("../img/mobile/radiators.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mobile/radiators@2x.png");
+      }
+    }
+  }
+
+  &--spare {
+    &::before {
+      background-image: url("../img/mobile/spare.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mobile/spare@2x.png");
+      }
+    }
+  }
+
+  &--other {
+    &::before {
+      background-image: url("../img/mobile/other.png");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/mobile/other@2x.png");
+      }
+    }
+  }
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+
+    &::before {
+      transform: scale(1.05);
+      transition: $basicTime;
+    }
+  }
+}
