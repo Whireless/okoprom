@@ -4,8 +4,9 @@
 
 .main-nav__menu-list {
   position: absolute;
-  left: -16px;
-  right: -16px;
+  top: -88px;
+  left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   background-color: $white;
@@ -28,8 +29,8 @@
   }
 
   &--open {
-    height: 85vh;
-    transform: translateY(-17%);
+    height: 100vh;
+    transform: translateY(0);
     transition: 0.2s;
 
     &~.main-nav__button-block {
