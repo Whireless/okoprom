@@ -8,6 +8,13 @@
   background-image: url("../img/icons/logo.svg");
   width: 119px;
   height: 28px;
+  transition: $basicTime;
+
+  &:hover,
+  &:focus {
+    opacity: $basicOpacity;
+    transition: $basicTime;
+  }
 }
 
 .main-footer__intro {
