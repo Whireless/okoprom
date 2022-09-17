@@ -69,7 +69,7 @@ exports.copyImages = copyImages;
 
 const copy = (done) => {
   gulp.src([
-    'source/fonts/*.ttf',
+    'source/fonts/*.woff2',
     'source/*.ico',
   ], {
     base: 'source'

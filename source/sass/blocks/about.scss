@@ -1,0 +1,35 @@
+.about {
+  color: $blackText;
+  margin-top: 40px;
+}
+
+.about__intro-info {
+  padding-bottom: 60px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid $grey2;
+}
+
+.about__title {
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0 0 20px 0;
+}
+
+.about__description {
+  margin: 0;
+}
+
+.about__statistic-title {
+  font-weight: 400;
+  color: $greyText;
+  margin: 0;
+}
+
+.about__statistic-number {
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  display: inline-block;
+  margin: 12px 0 4px 0;
+}
